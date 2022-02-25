@@ -133,15 +133,17 @@ z-index: -1;
 /*START OF ABOUT ME PAGE */
 @media(max-width:1080px){
     .about-me-container .row .col-md-6 #about-me-img img{
-        height: 350px;
-        width: 350px;
+        height: 400px;
+        width: 290px;
     }
 }
 @media(max-width:960px){
+    .about-me-container .row .col-md-6 #about-me-img{
+        margin-left: 20%
+    }
     .about-me-container .row .col-md-6 #about-me-img img{
-        height: 300px;
+        height: 400px;
         width: 300px;
-        margin-top: 75px;
         padding-right: 10px;
     }
     .container-fluid .row .col-md-6 .about-me-content{
@@ -154,7 +156,7 @@ z-index: -1;
         padding-right: 50px;
     }
     .about-me-container .row .col-md-6 #about-me-img img{
-        height: 375px;
+        height: 525px;
         width: 375px;
         margin-top: 0px;
         padding-bottom: 50px;
@@ -170,13 +172,13 @@ z-index: -1;
 }
 @media(max-width:450px){
     .about-me-container .row .col-md-6 #about-me-img img{
-        height: 300px;
+        height: 415px;
         width: 300px;
     }
 }
 @media(max-width:400px){
     .about-me-container .row .col-md-6 #about-me-img{
-        padding: 55px 0px 0px 0px;
+        padding: 30px 0px 0px 0px;
     }
 }
 @media(max-width:375px){
@@ -195,11 +197,11 @@ z-index: -1;
     padding: 0px 125px 55px 10px;
 }
 #about-me-img{
-    margin-left: 25%;
+    margin-left: 30%;
 }
 #about-me-img img{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 350px;
 }
 .about-me-page-counter-container{
     height: 100px;
@@ -251,6 +253,7 @@ z-index: -1;
 }
 .resume-button{
     margin-top: 25px;
+    font-size: 20px;
 }
 .resume-button > button{
     border: none;
@@ -267,8 +270,17 @@ z-index: -1;
     color: black;
     text-decoration: none;
 }
-
-
+.about-me-tech div{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-me-tech div img{
+    height: 115px;
+    width: 115px;
+}
 
 
 
@@ -298,6 +310,9 @@ z-index: -1;
 @media(max-width:767px){
     .projects-container .row .col-md-12 #project-header{
         margin-left: 50px;
+    }
+    .about-me-container .about-me-tech{
+        display: none;
     }
     html body .project-description-con{
         display: none;
@@ -422,8 +437,8 @@ z-index: -1;
     padding-top: 75px;
 }
 .clone-technologies img{
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
 }
 .clone-description-container{
     display: block;
@@ -497,8 +512,8 @@ z-index: -1;
     padding-top: 75px;
 }
 .crud-technologies img{
-    height: 100px;
-    width: 100px;
+    height: 115px;
+    width: 115px;
 }
 .crud-description-container{
     display: none;
@@ -533,8 +548,8 @@ z-index: -1;
     padding-top: 75px;
 }
 .api-technologies img{
-    height: 100px;
-    width: 100px;
+    height: 115px;
+    width: 115px;
 }
 .api-description-container{
     display: none;

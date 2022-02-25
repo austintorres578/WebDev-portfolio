@@ -61,7 +61,7 @@ function toggleCrudProject(){
 
     cloneTech.style.display="none";
     perfectTech.style.display="none";
-    crudTech.style.display="block";
+    crudTech.style.display="flex";
     apiTech.style.display="none";
 
     cloneDescription.style.display="none";
@@ -79,7 +79,7 @@ function toggleApiProject(){
     cloneTech.style.display="none";
     perfectTech.style.display="none";
     crudTech.style.display="none";
-    apiTech.style.display="block";
+    apiTech.style.display="flex";
 
     cloneDescription.style.display="none";
     perfectDescription.style.display="none";

@@ -13,11 +13,11 @@ var songListToggleClick = document.getElementById("song-list-toggle-click");
 var songListToggleTouch = document.getElementById("song-list-toggle-touch");
 var songBlur = document.getElementById("song-blur");
 
-seventiesBtn.addEventListener("click",changeToSeven);
-eightiesBtn.addEventListener("click",changeToeight);
-ninetiesBtn.addEventListener("click",changeToNine);
-songListToggleClick.addEventListener("click", disableToggle);
-songListToggleTouch.addEventListener("click", disableToggle)
+seventiesBtn.addEventListener("click",changeToSeven ,{passive: true});
+eightiesBtn.addEventListener("click",changeToeight ,{passive: true});
+ninetiesBtn.addEventListener("click",changeToNine ,{passive: true});
+songListToggleClick.addEventListener("click", disableToggle ,{passive: true});
+songListToggleTouch.addEventListener("click", disableToggle ,{passive: true})
 
 function changeToSeven(){
     seventiesBtn.style.backgroundColor="red";
@@ -81,14 +81,14 @@ var videoThreeBtns = document.getElementById("video-3-btns");
 var videoThreeLeftBtn = document.getElementById("video-3-left");
 var videoThreeRightBtn = document.getElementById("video-3-right");
 
-videoOneLeftBtn.addEventListener("click",changeToVideoThreeFromOne);
-videoOneRightBtn.addEventListener("click", changeToVideoTwoFromOne);
+videoOneLeftBtn.addEventListener("click",changeToVideoThreeFromOne ,{passive: true});
+videoOneRightBtn.addEventListener("click", changeToVideoTwoFromOne ,{passive: true});
 
-videoTwoLeftBtn.addEventListener("click",changeToVideoOneFromTwo);
-videoTwoRightBtn.addEventListener("click",changeToVideoThreeFromTwo);
+videoTwoLeftBtn.addEventListener("click",changeToVideoOneFromTwo ,{passive: true});
+videoTwoRightBtn.addEventListener("click",changeToVideoThreeFromTwo ,{passive: true});
 
-videoThreeLeftBtn.addEventListener("click",changeToVideoTwoFromThree);
-videoThreeRightBtn.addEventListener("click",changeToVideoOneFromThree);
+videoThreeLeftBtn.addEventListener("click",changeToVideoTwoFromThree ,{passive: true});
+videoThreeRightBtn.addEventListener("click",changeToVideoOneFromThree ,{passive: true});
 
 function changeToVideoThreeFromOne(){
     videoOne.style.display="none";
@@ -136,6 +136,8 @@ function changeToVideoOneFromThree(){
 
 /*MEDIA IMAGE SLIDER START*/
 
+let activeMediaImage = document.getElementById("active-media-image");
+
 var imageOneLeftBtn = document.getElementById("image-1-left");
 var imageOneRightBtn = document.getElementById("image-1-right");
 
@@ -157,20 +159,20 @@ var sliderImagesThree = document.getElementById("desk-media-images-content-three
 var sliderImagesFour = document.getElementById("desk-media-images-content-four");
 var sliderImagesFive = document.getElementById("desk-media-images-content-five");
 
-imageOneLeftBtn.addEventListener("click",slideToImageFiveFromOne);
-imageOneRightBtn.addEventListener("click",slideToImageTwoFromOne);
+imageOneLeftBtn.addEventListener("click",slideToImageFiveFromOne ,{passive: true});
+imageOneRightBtn.addEventListener("click",slideToImageTwoFromOne ,{passive: true});
 
-imageTwoLeftBtn.addEventListener("click",slideToImageOneFromTwo);
-imageTwoRightBtn.addEventListener("click",slideToImageThreeFromTwo);
+imageTwoLeftBtn.addEventListener("click",slideToImageOneFromTwo ,{passive: true});
+imageTwoRightBtn.addEventListener("click",slideToImageThreeFromTwo ,{passive: true});
 
-imageThreeLeftBtn.addEventListener("click",slideToImageTwoFromThree);
-imageThreeRightBtn.addEventListener("click",slideToImageFourFromThree);
+imageThreeLeftBtn.addEventListener("click",slideToImageTwoFromThree ,{passive: true});
+imageThreeRightBtn.addEventListener("click",slideToImageFourFromThree ,{passive: true});
 
-imageFourLeftBtn.addEventListener("click",slideToImageThreeFromFour);
-imageFourRightBtn.addEventListener("click",slideToImageFiveFromFour);
+imageFourLeftBtn.addEventListener("click",slideToImageThreeFromFour ,{passive: true});
+imageFourRightBtn.addEventListener("click",slideToImageFiveFromFour ,{passive: true});
 
-imageFiveLeftBtn.addEventListener("click",slideToImageFourFromFive);
-imageFiveRightBtn.addEventListener("click",slidetoImageOneFromFive);
+imageFiveLeftBtn.addEventListener("click",slideToImageFourFromFive ,{passive: true});
+imageFiveRightBtn.addEventListener("click",slidetoImageOneFromFive ,{passive: true});
 
 function slideToImageFiveFromOne(){
     sliderImagesOne.style.display="none";
@@ -213,5 +215,48 @@ function slidetoImageOneFromFive(){
     sliderImagesFive.style.display="none";
     sliderImagesOne.style.display="flex";
 };
+
+sliderImagesOne.addEventListener("click", changeActiveImgOne ,{passive: true});
+
+function changeActiveImgOne(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src.replace(".webp","full.webp");
+
+    }
+};
+sliderImagesTwo.addEventListener("click", changeActiveImgTwo) ,{passive: true};
+
+function changeActiveImgTwo(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src.replace(".webp","full.webp");
+    }
+};
+sliderImagesThree.addEventListener("click", changeActiveImgThree ,{passive: true});
+
+function changeActiveImgThree(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src.replace(".webp","full.webp");
+    }
+};
+sliderImagesFour.addEventListener("click", changeActiveImgFour ,{passive: true});
+
+function changeActiveImgFour(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src.replace(".webp","full.webp");
+    }
+};
+sliderImagesFive.addEventListener("click", changeActiveImgFive ,{passive: true});
+
+function changeActiveImgFive(event){
+    let clickedImage= event.target;
+    if(clickedImage.className=="media-images"){
+        activeMediaImage.src=clickedImage.src.replace(".webp","full.webp");
+    }
+};
+
 
 /*MEDIA IMAGE SLIDER END*/
