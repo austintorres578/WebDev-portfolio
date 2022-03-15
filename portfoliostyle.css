@@ -284,7 +284,7 @@ z-index: -1;
     margin-top: 25px;
     font-size: 20px;
 }
-.resume-button > button{
+.resume-button > a > button{
     border: none;
     background-color: rgb(0, 232, 182);
     padding: 10px 13px 10px 13px;
@@ -292,10 +292,14 @@ z-index: -1;
     font-weight: bold;
     transition: .5s;
 }
-.resume-button > button:hover{
+.resume-button > a > button:hover{
     background-color: white;
 }
 .resume-button a{
+    color: black;
+    text-decoration: none;
+}
+.resume-button a:hover{
     color: black;
     text-decoration: none;
 }
