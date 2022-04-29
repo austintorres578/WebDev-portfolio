@@ -1,6 +1,6 @@
 const cloneProject = document.getElementById("clone-project-image");
 const perfectProject = document.getElementById("perfect-project-image");
-const crudProject = document.getElementById("crud-project-image");
+const reactProject = document.getElementById("react-blog-image");
 const apiProject = document.getElementById("api-project-image");
 
 const cloneTech = document.getElementById("clone-technologies");
@@ -16,13 +16,13 @@ const apiDescription = document.getElementById("api-description-container");
 
 cloneProject.addEventListener("click",toggleCloneProject);
 perfectProject.addEventListener("click",togglePerfectProject);
-crudProject.addEventListener("click",toggleCrudProject);
+reactProject.addEventListener("click",toggleReactProject);
 apiProject.addEventListener("click",toggleApiProject);
 
 function toggleCloneProject(){
     perfectProject.style.boxShadow="none";
     cloneProject.style.boxShadow="0 4px 6px 0 rgb(0, 232, 182), 0 5px 12px 0 rgb(0, 232, 182)"
-    crudProject.style.boxShadow="none"
+    reactProject.style.boxShadow="none"
     apiProject.style.boxShadow="none"
 
     cloneTech.style.display="flex";
@@ -39,7 +39,7 @@ function toggleCloneProject(){
 function togglePerfectProject(){
     perfectProject.style.boxShadow="0 4px 6px 0 rgb(0, 232, 182), 0 5px 12px 0 rgb(0, 232, 182)";
     cloneProject.style.boxShadow="none"
-    crudProject.style.boxShadow="none"
+    reactProject.style.boxShadow="none"
     apiProject.style.boxShadow="none"
 
     cloneTech.style.display="none";
@@ -53,10 +53,10 @@ function togglePerfectProject(){
     apiDescription.style.display="none";
 };
 
-function toggleCrudProject(){
+function toggleReactProject(){
     perfectProject.style.boxShadow="none";
     cloneProject.style.boxShadow="none";
-    crudProject.style.boxShadow="0 4px 6px 0 rgb(0, 232, 182), 0 5px 12px 0 rgb(0, 232, 182)";
+    reactProject.style.boxShadow="0 4px 6px 0 rgb(0, 232, 182), 0 5px 12px 0 rgb(0, 232, 182)";
     apiProject.style.boxShadow="none";
 
     cloneTech.style.display="none";
@@ -73,7 +73,7 @@ function toggleCrudProject(){
 function toggleApiProject(){
     perfectProject.style.boxShadow="none";
     cloneProject.style.boxShadow="none";
-    crudProject.style.boxShadow="none";
+    reactProject.style.boxShadow="none";
     apiProject.style.boxShadow="0 4px 6px 0 rgb(0, 232, 182), 0 5px 12px 0 rgb(0, 232, 182)";
 
     cloneTech.style.display="none";

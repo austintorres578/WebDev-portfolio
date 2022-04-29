@@ -691,6 +691,7 @@ z-index: -1;
 .mobile-img-links div h3{
     color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-decoration: underline rgb(0, 232, 182);
 }
 .mobile-img-links div img{
