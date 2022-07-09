@@ -1,0 +1,353 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+@media (max-width:768px){
+    html body .date-container{
+        justify-content: center;
+    }
+    html body .date-container .date-form-container{
+        padding-left: 125px;
+    }
+}
+.date-form{
+    display: block;
+}
+.date-form-container{
+    display: flex;
+    margin-bottom: 25px;
+    padding-top:25px;
+}
+.date-container{
+    display: flex;
+    justify-content: right;
+}
+.date-container div input{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2px;
+    padding: 0px;
+    height: 20px;
+}
+.date-container div p{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #a18a72;
+    font-family: Arial, sans-serif;
+}
+.filled-date{
+    display: none;
+    justify-content: right;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+.day-reset-btn-container{
+    margin-top: 20px;
+    margin-right: 150px;
+}
+.todays-date{
+    padding-left: 5px;
+    border-bottom: solid #a18a72;
+}
+.day-edit-btn{
+    margin-left: 5px;
+}
+.day-reset-btn{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    margin-left: 5px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+.date-container div .filled-date{
+    display: none;
+}
+
+.header-container{
+    background-color: #e1dacf;
+    height:75px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+@media(max-width:440px){
+    .header-container .header-text{
+        font-size: 50px;
+    }
+}
+.header-text{
+    text-align: center;
+    font-size: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0%;
+    left: -5%;
+    font-weight: bold;
+    font-family: 'Bonheur Royale', cursive;
+    color: #a18a72;
+}
+.header-text p{
+    margin: 0px;
+}
+@media (max-width:650px){
+    html body .sleep-time-container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    html body .sleep-time-container .wake-time-container #wake-form input{
+        width: 60vw;
+        margin-right: 0px;
+    }
+    html body .sleep-time-container .bed-time-container #bed-form input{
+        margin-left: 0px;
+        width: 60vw;
+    }
+    #parent-element{
+        justify-content: center;
+    }
+    #priority-text{
+        width: 50vw;
+    }
+    .filled-wake-time{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filled-bed-time{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.sleep-time-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wake-time-container{
+   display: block;
+}
+
+.wake-time-container p{
+    font-size: 25px;
+    color: #a18a72;
+    font-family: Arial, sans-serif;
+}
+.wake-time-container input{
+    width: 40vw;
+    margin-right: 15px;
+    height: 30px;
+    font-size: 20px;
+}
+.filled-wake-time-container{
+    display: none;
+}
+.filled-wake-time-header{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+}
+.filled-wake-time{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+    border-bottom: solid #a18a72;
+    width: 40vw;
+    
+}
+.filled-wake-edit-btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.filled-wake-delete-btn{
+    background-color: red;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+}
+.filled-wake-delete-btn:hover{
+    background-color: darkred;
+}
+.bed-time-container{
+    display: block;
+}
+.bed-time-container p{
+    font-size: 25px;
+    margin-left: 15px;
+    color: #a18a72;
+    font-family: Arial, sans-serif;
+}
+.bed-time-container input{
+    width: 40vw;
+    height: 30px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.filled-bed-time-container{
+    display: none;
+    margin-left: 15px;
+}
+.filled-bed-time-header{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+}
+.filled-bed-time{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+    border-bottom: solid #a18a72;
+    width: 40vw;
+}
+.filled-bed-edit-btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.filled-bed-delete-btn{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+.filled-bed-delete-btn:hover{
+    background-color: darkred;
+}
+@media(max-width:650px){
+    html body .list-body-container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .list-body-container .list-container .priorities-container p{
+        text-align: center;
+    }
+    .list-body-container .list-container .priorities-container #priorities-input-container #priorities-input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+    }
+    .list-body-container .list-container .to-do-list-container #to-do-list-input-container #to-do-list-input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+    }
+    #parent-element{
+        justify-content: center;
+    }
+    #to-do-text{
+        width: 50vw;
+    }
+}
+
+.list-body-container{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 55px;
+}
+.list-image img{
+    height: 400px;
+    padding-left: 10vw;
+    padding-bottom: 50px;
+}
+.list-container input{
+    width: 300px;
+}
+.priorities-container p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+}
+.priorities-container li{
+    margin-bottom: 5px;
+}
+.priorities-container input{
+    height: 30px;
+    width: 39vw;
+    font-size: 20px;
+}
+.priority-item{
+    margin-bottom: 5px;
+}
+.priority-delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.priority-delete-btn:hover{
+    background-color: darkred;
+}
+.priorities-container ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.priorities-container ul li{
+    display: flex;
+}
+.priorities-container ul li input{
+    width: 20px;
+}
+.priorities-container ul li p{
+    border-bottom: solid #a18a72;
+    width: 100%;
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.to-do-list-container p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a18a72;
+}
+.to-do-list-container ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.to-do-list-container ul li{
+    display: flex;
+    margin-bottom: 5px;
+}
+.to-do-list-container ul li p{
+    border-bottom: solid #a18a72;
+    width: 100%;
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.to-do-list-container ul li input{
+    width: 20px;
+}
+.to-do-list-container input{
+    height: 30px;
+    width: 39vw;
+    font-size: 20px;
+}
+
+.to-do-delete-btn{
+    background-color: red;
+    border: none;
+    color: white;
+}
+.to-do-delete-btn:hover{
+    background-color: darkred;
+}
+
+#priorities-input{
+    display: block;
+}
+#to-do-list-input{
+    display: block;
+}
+#priorities-edit-input-container{
+    display: none;
+}
+#to-do-list-edit-input-container{
+    display: none;
+}
