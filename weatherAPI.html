@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,4 +195,202 @@
   </div>
   <script src="weatherApiScript.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" href="weatherApiStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Weather App</title>
+</head>
+<body>
+  <div id="weather-menu-container" class="weather-menu-container">
+    <nav>
+      <div id="history-button" class="history-button">
+        <button>
+          <i class="fas fa-history"></i>
+        </button>
+      </div>
+      <div id="close-history-button" class="close-history-button">
+        <button>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="website-name">
+        <p>WeatherBoy</p>
+      </div>
+    </nav>
+    <div id="weather-menu" class="weather-menu">
+      <div id="button-container" class="button-container">
+        <button id="favorite-button" class="favorite-button"><i class="fas fa-star"></i></button>
+        <button id="unfavorite-button" class="unfavorite-button"><i class="fas fa-star"></i></button>
+        <button class="x-button" id="x-button"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="weather-information-container" class="weather-information-container">
+        <div class="weather-temperture">
+          <p id="temperture-text" class="temperture-text"></p>
+          <p id="location-text" class="location-text"></p>
+          <p id="feels-like-text" class="feels-like-text"></p>
+        </div>
+        <div id="weather-images-container" class="weather-images-container">
+          <img id="weather-image" class="weather-image" src="" alt="" srcset="">
+          <p id="weather-text"></p>
+        </div>
+      </div>
+      <div id="weather-catagories-container" class="weather-catagories-container">
+        <div class="humidity-container">
+          <p class="humidity-header">Humidity</p>
+          <img src="weatherAPI-Images\icons\humidity.png" alt="">
+          <p class="humidity-subtitle" id="humidity-subtitle"></p>
+        </div>
+        <div class="wind-container">
+          <p class="wind-header">Wind</p>
+          <img src="weatherAPI-Images\icons\wind.png" alt="">
+          <p class="wind-subtitle" id="wind-subtitle"></p>
+        </div>
+        <div class="ultraviolet-container">
+          <p class="ultraviolet-header">UV Rating</p>
+          <img src="weatherAPI-Images\icons\ultraviolet-icon.jpg" alt="">
+          <p class="ultraviolet-subtitle" id="ultraviolet-subtitle"></p>
+        </div>
+      </div>
+      <div id="weather-input-container" class="weather-input-container">
+        <input type="text" name="" id="zip-input" class="zip-input" placeholder="Enter ZipCode">
+        <button id="submit-button" class="submit-button">Submit</button>
+      </div>
+    </div>
+    <div id="weather-history-menu-desk" class="weather-history-menu-desk">
+      <ul id="weather-history-list">
+      </ul>
+    </div>
+    <div id="weather-hourly-container" class="weather-hourly-container">
+      <div class="weather-hourly">
+        <p>12AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>1AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>2AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>3AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>4AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>5AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>6AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>7AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>8AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>9AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>10AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>11AM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>12PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>1PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>2PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>3PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>4PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>5PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>6PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>7PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>8PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>9PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>10PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <div class="weather-hourly">
+        <p>11PM</p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <script src="weatherApiScript.js"></script>
+</body>
+>>>>>>> 8d53010d4f446cd69a38de061835161dbd70af35
 </html>
